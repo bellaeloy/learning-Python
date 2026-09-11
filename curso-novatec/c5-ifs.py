@@ -94,3 +94,32 @@ if 'mango' in favorite_fruits:
     print('You really like mango')
 if 'watermellon' in favorite_fruits:
     print('You really like watermellon')
+
+#5.8 hello admin
+users = ['carla', 'bob', 'leo', 'james', 'admin']
+for name in users:
+    if(name == 'admin'):
+        print("Hello Jaden, thank you for being here again!")
+    else:
+        print(f"Welcome {name}!")
+
+#5.9 empty list
+users = []
+if users == []:
+    print("It is necessary find some users!")
+else:
+    for name in users:
+        if name == 'admin':
+            print("Hello Jaden, thank you for being here again!")
+        else:
+            print(f"Welcome {name}!")
+
+#5.10 checking names
+current_users = ['bella', 'manu', 'gabe', 'andrei', 'rafa']
+new_users = ['nat', 'tony', 'thor', 'bella', 'manu']
+
+for name in new_users:
+    if name in current_users:
+        print(f"{name}, you need a diffent name")
+    else:
+        print(f"{name} your name is available.")
